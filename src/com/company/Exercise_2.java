@@ -10,16 +10,20 @@ public class Exercise_2 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
+
         int sumEven = 0, sumOdd = 0;
-        for (int i = 0; i <= number; i++) {
-            if (i % 2 == 0) {
-                sumEven = i + sumEven;
+        boolean confirm;
+        do{
+            System.out.print("Enter a integer number: ");
+            int number = scanner.nextInt();
+            if (number % 2 == 0 && number != 0) {
+                sumEven = number + sumEven;
             } else  {
-                sumOdd = i + sumOdd;
+                sumOdd = number + sumOdd;
             }
-        }
+            System.out.print("Do you want to continue? true/false: ");
+            confirm = scanner.nextBoolean();
+        } while (confirm);
         System.out.println("The sum of even numbers: " + sumEven);
         System.out.println("The sum of odd numbers: " + sumOdd);
     }
