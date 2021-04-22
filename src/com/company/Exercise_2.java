@@ -13,12 +13,12 @@ public class Exercise_2 {
 
         int sumEven = 0, sumOdd = 0;
         boolean confirm;
-        do{
+        do {
             System.out.print("Enter a integer number: ");
             int number = scanner.nextInt();
             if (number % 2 == 0) {
                 sumEven = number + sumEven;
-            } else  {
+            } else {
                 sumOdd = number + sumOdd;
             }
             System.out.print("Do you want to continue? true/false: ");
