@@ -16,7 +16,7 @@ public class Exercise_2 {
         do{
             System.out.print("Enter a integer number: ");
             int number = scanner.nextInt();
-            if (number % 2 == 0 && number != 0) {
+            if (number % 2 == 0) {
                 sumEven = number + sumEven;
             } else  {
                 sumOdd = number + sumOdd;
